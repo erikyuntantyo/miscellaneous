@@ -1,0 +1,4 @@
+iptables -A INPUT -p tcp -s 66.96.235.195 --dport 27017 -j ACCEPT
+iptables -A INPUT -p tcp -s 0.0.0.0/0 --dport 27017 -j DROP
+iptables -I INPUT -p tcp -s 127.0.0.1 --dport 27017 -j ACCEPT
+iptables -I INPUT -p tcp -s 159.203.177.12 --dport 27017 -j ACCEPT
